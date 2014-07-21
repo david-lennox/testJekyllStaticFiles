@@ -1,0 +1,25 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+</head>
+
+<body>
+	<h1>site.pages</h1>	
+	{% for page in site.pages %}
+	{{ page.url }}
+	{% endfor %}
+	<h1>site.posts</h1>
+	
+	{% for post in site.posts %}
+	{{ post.url }}
+	{% endfor %}
+	<h1>site.static_files</h1>	
+	{% for sf in site.static_files %}
+	{{ sf.path }}
+	{% endfor %}
+</body>
+
+</html>
